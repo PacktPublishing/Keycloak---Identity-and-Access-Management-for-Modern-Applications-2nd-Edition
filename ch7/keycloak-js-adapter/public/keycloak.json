@@ -1,0 +1,7 @@
+{
+  "realm": "myrealm",
+  "auth-server-url": "http://localhost:8180",
+  "ssl-required": "external",
+  "resource": "mybrowserapp",
+  "public-client": true
+}
