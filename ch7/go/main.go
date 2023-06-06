@@ -61,6 +61,7 @@ func createConfig(provider oidc.Provider) (oidc.Config, oauth2.Config) {
 func main() {
 	http.HandleFunc("/", redirectHandler)
 	http.HandleFunc("/auth/callback", callbackHandler)
+	http.HandleFunc("/logout", logoutHandler)
 
 	log.Printf("To authenticate go to http://%s/", "localhost:8080")
 	log.Fatal(http.ListenAndServe("localhost:8080", nil))
@@ -81,7 +82,7 @@ func redirectHandler(resp http.ResponseWriter, req *http.Request) {
 		// user authenticated, landing page
 		io.WriteString(resp, "<html><body>"+
 			"You are already authenticated. "+
-			"Click <a href='"+KEYCLOAK_REALM_URL+"/protocol/openid-connect/logout?client_id="+oidcConfig.ClientID+"'>here</a> to logout"+
+			"Click <a href='"+KEYCLOAK_REALM_URL+"/protocol/openid-connect/logout?client_id="+oidcConfig.ClientID+"&post_logout_redirect_uri=http://localhost:8080/logout'>here</a> to logout"+
 			"</body></html>")
 	}
 }
@@ -114,6 +115,12 @@ func callbackHandler(resp http.ResponseWriter, req *http.Request) {
 	}
 
 	handleSuccessfulAuthentication(tokenResponse, *idToken, resp)
+}
+
+func logoutHandler(resp http.ResponseWriter, req *http.Request) {
+	expireCookie("p_sessionid", resp)
+	http.Redirect(resp, req, "http://localhost:8080", http.StatusFound)
+
 }
 
 func setCookie(name string, value string, maxAge int, resp http.ResponseWriter) {
