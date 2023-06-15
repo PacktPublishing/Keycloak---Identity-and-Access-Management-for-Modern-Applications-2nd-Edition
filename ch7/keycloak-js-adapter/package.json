@@ -1,0 +1,11 @@
+{
+  "name": "spa",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "string-replace-middleware": "^1.0.2"
+  }
+}

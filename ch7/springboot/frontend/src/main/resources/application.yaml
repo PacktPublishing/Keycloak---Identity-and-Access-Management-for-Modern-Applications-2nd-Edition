@@ -13,6 +13,4 @@ spring:
             scope: openid
         provider:
           keycloak:
-            authorization-uri: http://localhost:8180/realms/myrealm/protocol/openid-connect/auth
-            token-uri: http://localhost:8180/realms/myrealm/protocol/openid-connect/token
-            jwk-set-uri: http://localhost:8180/realms/myrealm/protocol/openid-connect/certs
+            issuer-uri: http://localhost:8180/realms/myrealm
