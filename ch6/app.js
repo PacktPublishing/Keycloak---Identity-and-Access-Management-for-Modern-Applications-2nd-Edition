@@ -3,6 +3,9 @@ var open = require('open');
 var axios = require('axios');
 var querystring = require('querystring');
 
+var dns = require('node:dns');
+dns.setDefaultResultOrder('ipv4first');
+
 var app = express();
 app.use(express.static('callback'));
 
