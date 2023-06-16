@@ -75,6 +75,10 @@ function loadTokens() {
             var response = JSON.parse(req.responseText);
             setOutput('output-response', req.responseText);
 
+            setState('refreshToken', response['refresh_token']);
+            setState('idToken', response['id_token']);
+            setState('accessToken', response['access_token']);
+
             if (response['id_token']) {
                 var idToken = response['id_token'].split('.');
                 var idTokenHeader = JSON.parse(base64UrlDecode(idToken[0]));
@@ -83,11 +87,10 @@ function loadTokens() {
                 setOutput('output-idtokenHeader', idTokenHeader);
                 setOutput('output-idtoken', idTokenBody);
                 setOutput('output-idtokenSignature', idTokenSignature);
-                setState('refreshToken', response['refresh_token']);
-                setState('idToken', response['id_token']);
-                setState('accessToken', response['access_token']);
             } else {
+                setOutput('output-idtokenHeader', '');
                 setOutput('output-idtoken', '');
+                setOutput('output-idtokenSignature', '');
             }
         }
     }
@@ -108,8 +111,8 @@ function refreshTokens() {
 
     var params = 'grant_type=refresh_token';
     params += '&refresh_token=' + state.refreshToken;
-    params += '&client_id=' + clientId;
-    params += '&scope=openid';
+    params += '&client_id=' + getInput('input-clientid');
+    params += '&scope=' + getInput('input-scope');
 
     var req = new XMLHttpRequest();
     req.onreadystatechange = function() {
@@ -117,10 +120,13 @@ function refreshTokens() {
             var response = JSON.parse(req.responseText);
             setOutput('output-refreshResponse', req.responseText);
 
+            setState('refreshToken', response['refresh_token']);
+            setState('idToken', response['id_token']);
+            setState('accessToken', response['access_token']);
+
             if (response['id_token']) {
                 var idToken = JSON.parse(base64UrlDecode(response['id_token'].split('.')[1]));
                 setOutput('output-idtokenRefreshed', idToken);
-                setState('refreshToken', response['refresh_token']);
             } else {
                 setOutput('output-idtokenRefreshed', '');
             }
