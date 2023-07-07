@@ -1,8 +1,9 @@
 # Keycloak - Identity and Access Management for Modern Applications, Second Edition
 This is the code repository for [Keycloak - Identity and Access Management for Modern Applications, Second Edition](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications-second-edition/9781804616444), published by Packt.
-[Stian Thorgersen](#), [Pedro Igor Silva](#)
+
 **Harness the power of Keycloak, OpenID Connect and OAuth 2.0 to secure applications**
 
+[Stian Thorgersen](https://www.linkedin.com/in/stian-thorgersen-4714983), [Pedro Igor Silva](https://www.linkedin.com/in/pigorcraveiro)
 ## About the book
 
 The 2nd Edition of Keycloak - Identity and Access Management for Modern Applications is an updated, comprehensive introduction to Keycloak and its updates.
@@ -25,7 +26,7 @@ By the end of this new edition, you will have learned how to install and manage 
 - More in-depth coverage of OAuth best practices 
 - More content on Keycloak authorization services 
 
-[Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493)
+Previous Edition: [Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493)
 
 ## Table of contents
 ### Chapters
