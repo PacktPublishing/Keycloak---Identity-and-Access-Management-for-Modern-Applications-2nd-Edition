@@ -1,5 +1,6 @@
 # Keycloak - Identity and Access Management for Modern Applications, Second Edition
 This is the code repository for [Keycloak - Identity and Access Management for Modern Applications, Second Edition](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications-second-edition/9781804616444), published by Packt.
+[Stian Thorgersen](#), [Pedro Igor Silva](#)
 **Harness the power of Keycloak, OpenID Connect and OAuth 2.0 to secure applications**
 
 ## About the book
@@ -10,7 +11,7 @@ In this new edition, you will learn how to use the latest distribution of Keyclo
 
 By the end of this new edition, you will have learned how to install and manage the latest version of Keycloak to secure new and existing applications using the newest features.
 
-## What you will learn
+## Key Takeaways
 - Understand how to install, configure and manage the latest version of Keycloak
 - Leverage additional features and capabilities of Keycloak in this new version
 - Discover new updates to installing and running Keycloak
@@ -18,17 +19,13 @@ By the end of this new edition, you will have learned how to install and manage 
 - Safely manage Keycloak in a production environment
 - Discover available frameworks and third-party libraries that can be used with Keycloak
 
-## Key Takeaways: 
-- You’ll learn how to download, install, and use the newest version of Keycloak 
-- You’ll be able to secure both new and existing applications 
-- You’ll be ready to use Keycloak for enterprise security and be able to integrate if with your existing user base 
-- You’ll get up to speed on Keycloak fast 
-
-## Differences between this and the last edition: 
+## New Edition v/s Previous Edition: 
 - Based on, and fully updated for, the newest Keycloak version 
 - Spring Security replaces the older Spring Adapter 
 - More in-depth coverage of OAuth best practices 
 - More content on Keycloak authorization services 
+
+[Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493)
 
 ## Table of contents
 ### Chapters
@@ -78,3 +75,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 _Stian Thorgersen_ started his career at Arjuna Technologies building a cloud federation platform, years before most companies were even ready for a single-vendor public cloud. He later joined Red Hat, looking for ways to make developers’ lives easier, which is where the idea of Keycloak started. In 2013, Stian co-founded the Keycloak project with another developer at Red Hat. Today, Stian is the Keycloak project lead and is also the top contributor to the project. He is still employed by Red Hat as a senior principal software engineer focusing on identity and access management, both for Red Hat and for Red Hat’s customers. In his spare time, there is nothing Stian likes more than throwing his bike down the mountains of Norway.
 
 _Pedro Igor Silva_ started his career back in 2000 at an ISP, where he had his first experiences with open source projects such as FreeBSD and Linux. In this time he worked as a Java and J2EE software engineer. Since then, he has worked in different IT companies as a system engineer, system architect, and consultant. Today, Pedro Igor is a principal software engineer at Red Hat and one of the core developers of Keycloak. His main area of interest and study is now IT security, specifically in the application security and identity and access management spaces. In his non-working hours, he takes care of his planted aquariums.
+
+## Other Related Books
+- [Cybersecurity Threats, Malware Trends, and Strategies - Second Edition](https://www.packtpub.com/product/cybersecurity-threats-malware-trends-and-strategies-second-edition/9781804613672)
+- [Cybersecurity Blue Team Strategies](https://www.packtpub.com/product/cybersecurity-blue-team-strategies/9781801072472)
