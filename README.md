@@ -3,7 +3,7 @@ This is the code repository for [Keycloak - Identity and Access Management for M
 
 **Harness the power of Keycloak, OpenID Connect and OAuth 2.0 to secure applications**
 
-[Stian Thorgersen](https://www.linkedin.com/in/stian-thorgersen-4714983), [Pedro Igor Silva](https://www.linkedin.com/in/pigorcraveiro)
+The authors of this book are -[Stian Thorgersen](https://www.linkedin.com/in/stian-thorgersen-4714983), [Pedro Igor Silva](https://www.linkedin.com/in/pigorcraveiro)
 ## About the book
 
 The 2nd Edition of Keycloak - Identity and Access Management for Modern Applications is an updated, comprehensive introduction to Keycloak and its updates.
@@ -26,7 +26,12 @@ By the end of this new edition, you will have learned how to install and manage 
 - More in-depth coverage of OAuth best practices 
 - More content on Keycloak authorization services 
 
-Previous Edition: [Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493)
+## What's New 
+
+In the previous edition - '[Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493)' Keycloak was deployed on top of WildFly, a JavaEE Application Server, while more recent versions of Keycloak are now built with Quarkus, a cloud native Java framework. Being based on Quarkus brings a number of improvements, reducing startup time significantly, reducing memory footprint, and most importantly a much simpler and consistent approach to configuring Keycloak. 
+
+Another big change that came to Keycloak was a new admin console with a bigger focus on usability than the previous console. The new admin console underwent a complete re-design to make it easier and more intuitive. 
+
 
 ## Table of contents
 ### Chapters
@@ -57,8 +62,8 @@ With the following software and hardware list you can run all code files present
 | Chapter | Software required    | Link to the software    | Hardware specifications    | OS required    |
 |:---:  |:---:  |:---:  |:---:  |:---:  |
 | All chapters  | Docker  | [https://www.docker.com/](https://www.docker.com/) | Should work on any recent computer | Windows, MacOS, Linux  |
-| All chapters  | JDK 11+  | [https://openjdk.java.net/](https://openjdk.java.net/) | Should work on any recent computer  | Windows, MacOS, Linux |
-| Chapter 5-14  | Node.js  | [https://nodejs.org/ ](https://nodejs.org/) | Should work on any recent computer  | Windows, MacOS, Linux |
+| All chapters  | JDK 17+  | [https://openjdk.java.net/](https://openjdk.java.net/) | Should work on any recent computer  | Windows, MacOS, Linux |
+| Chapter 5-14  | Node.js 18+  | [https://nodejs.org/ ](https://nodejs.org/) | Should work on any recent computer  | Windows, MacOS, Linux |
 
 
 ## Know more on the Discord server <img alt="Coding" height="25" width="32"  src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif">
