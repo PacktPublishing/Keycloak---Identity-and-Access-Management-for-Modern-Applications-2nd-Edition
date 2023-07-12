@@ -61,6 +61,7 @@ With the following software and hardware list you can run all code files present
 
 | Chapter | Software required    | Link to the software    | Hardware specifications    | OS required    |
 |:---:  |:---:  |:---:  |:---:  |:---:  |
+| All chapters  | Keycloak 22  | [https://www.keycloak.org/downloads/](https://www.keycloak.org/downloads) | Should work on any recent computer | Windows, MacOS, Linux  |
 | All chapters  | Docker  | [https://www.docker.com/](https://www.docker.com/) | Should work on any recent computer | Windows, MacOS, Linux  |
 | All chapters  | JDK 17+  | [https://openjdk.java.net/](https://openjdk.java.net/) | Should work on any recent computer  | Windows, MacOS, Linux |
 | Chapter 5-14  | Node.js 18+  | [https://nodejs.org/ ](https://nodejs.org/) | Should work on any recent computer  | Windows, MacOS, Linux |
