@@ -32,7 +32,6 @@ In the previous edition - '[Keycloak - Identity and Access Management for Modern
 
 Another big change that came to Keycloak was a new admin console with a bigger focus on usability than the previous console. The new admin console underwent a complete re-design to make it easier and more intuitive. 
 
-
 ## Table of contents
 ### Chapters
 1. Getting Started with Keycloak
@@ -50,7 +49,145 @@ Another big change that came to Keycloak was a new admin console with a bigger f
 13. Extending Keycloak
 14. Securing Keycloak and Applications
 
+## Chapter Summary
+### Chapter 1, Getting Started with Keycloak
+This chapter gives you a brief introduction to Keycloak and steps on how to get quickly up to speed by installing and running Keycloak yourself. It also provides an introduction to the Keycloak admin and account consoles.
 
+We’re going to cover the following main topics:
+- Introducing Keycloak
+- Installing and running Keycloak
+- Discovering the Keycloak admin and account consoles
+
+### Chapter 2, Securing Your First Application 
+This chapter explains how to secure your first application with Keycloak through a sample application consisting of a single-page application and a REST API.
+
+We’re going to cover the following main topics:
+- Understanding the sample application
+- Running the application
+- Understanding how to log in to the application
+- Securely invoking the backend REST API
+
+### Chapter 3, Brief Introduction to Standards 
+This chapter provides a brief introduction and comparison of the standards Keycloak supports to enable you to integrate your applications securely and easily with Keycloak.
+
+We’re going to cover the following main topics:
+- Authorizing application access with OAuth 2.0
+- Authenticating users with OpenID Connect
+- Leveraging JWT for tokens
+- Understanding why SAML 2.0 is still relevant
+
+### Chapter 4, Authenticating Users with OpenID Connect 
+This chapter teaches how to authenticate users by leveraging the OpenID Connect standard. This chapter leverages a sample application that allows you to see and understand how an application authenticates to Keycloak through Open ID Connect.
+
+We’re going to cover the following main topics:
+- Running the OpenID Connect playground
+- Understanding the Discovery endpoint
+- Authenticating a user
+- Understanding the ID token
+- Invoking the UserInfo endpoint
+- Dealing with users logging out
+
+### Chapter 5, Authorizing Access with OAuth 2.0
+This chapter teaches how to authorize access to REST APIs and other services by leveraging the OAuth 2.0 standard. Through a sample application, you will see firsthand how an application obtains an access token through OAuth 2.0, which the application uses to invoke a protected REST API.
+
+We’re going to cover the following main topics:
+- Running the OAuth 2.0 playground
+- Obtaining an access token
+- Requiring user consent
+- Limiting the access granted to access tokens
+- Validating access tokens
+ 
+### Chapter 6, Securing Different Application Types
+This chapter covers best practices on how to secure different types of applications, including web, mobile, and native applications, as well as REST APIs and other backend services.
+
+We’re going to cover the following main topics:
+- Understanding internal and external applications
+- Securing web applications
+- Securing native and mobile applications
+- Securing REST APIs and services
+
+### Chapter 7, Integrating Applications with Keycloak
+This chapter provides steps on how to integrate your applications with Keycloak, covering a range of different programming languages, including Go, Java, client-side JavaScript, Node.js, and Python. It also covers how you can utilize a reverse proxy to secure an application implemented in any programming language or framework.
+
+We are going to cover the following topics and integrations:
+- Choosing an integration architecture
+- Choosing an integration option
+- Integrating with Golang applications
+- Integrating with Java applications
+- Integrating with JavaScript applications
+- Integrating with Node.js applications
+- Using a reverse proxy
+- Try not to implement your own integration
+
+### Chapter 8, Authorization Strategies
+This chapter covers how your application can use information about the user from Keycloak for access management, covering roles and groups, as well as custom information about users.
+
+We will be covering the following topics in this chapter:
+- Understanding authorization
+- Using RBAC
+- Using GBAC
+- Using OAuth2 scopes
+- Using ABAC
+- Using Keycloak as a centralized authorization server
+
+### Chapter 9, Configuring Keycloak for Production
+This chapter teaches how to configure Keycloak for production, including how to enable TLS, configuring a relational database, and enabling clustering for additional scale and availability.
+
+We will be covering the following topics:
+- Setting the hostname for Keycloak
+- Enabling TLS
+- Configuring a database
+- Enabling clustering
+- Configuring a reverse proxy
+- Evaluating your environment
+
+### Chapter 10, Managing Users
+This chapter takes a closer look at the capabilities provided by Keycloak related to user management. It also explains how to federate users from external sources such as LDAP, social networks, and external identity providers.
+
+We will cover the following topics:
+- Managing local users
+- Integrating with LDAP and Active Directory
+- Integrating with social identity providers
+- Integrating with third-party identity providers
+- Allowing users to manage their data
+
+### Chapter 11, Authenticating Users
+This chapter covers the various authentication capabilities provided by Keycloak, including how to enable second-factor authentication, as well as security keys.
+
+We will cover the following topics:
+- Understanding authentication flows
+- Using passwords
+- Using one-time passwords (OTPs)
+- Using Web Authentication (WebAuthn)
+- Using strong authentication
+
+### Chapter 12, Managing Tokens and Sessions
+This chapter helps understand how Keycloak leverages server-side sessions to keep track of authenticated users, as well as best practices for managing tokens issued to your applications.
+
+We are going to cover the following topics:
+- Managing sessions
+- Managing tokens
+
+### Chapter 13, Extending Keycloak
+This chapter explains how you can extend Keycloak, covering how you can modify the look and feel of user-facing pages such as the login pages and account console. It also provides a brief introduction to one of the more powerful capabilities of Keycloak that allows you to provide custom extensions for a large number of extension points.
+
+We are going to cover the following topics in this chapter:
+- Understanding service provider interfaces
+- Changing the look and feel
+- Customizing authentication flows
+- Looking at other customization points
+
+### Chapter 14, Securing Keycloak and Applications
+This chapter provides best practices on how to secure Keycloak for production. It also provides a brief introduction to some best practices to follow when securing your own applications.
+
+We’re going to cover the following main topics:
+- Securing Keycloak
+- Securing the database
+- Securing cluster communication
+- Securing applications
+
+### Assessments
+In this check your answers to the questions at the end of each chapter here.
 
 > If you feel this book is for you, get your [copy](https://www.amazon.com/Keycloak-Identity-Management-Applications-applications/dp/1804616443) today! <img alt="Coding" height="15" width="35"  src="https://media.tenor.com/ex_HDD_k5P8AAAAi/habbo-habbohotel.gif">
 
