@@ -8,6 +8,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "keycloak-connect": "^21.1.1"
+    "keycloak-connect": "^22.0.0"
   }
 }

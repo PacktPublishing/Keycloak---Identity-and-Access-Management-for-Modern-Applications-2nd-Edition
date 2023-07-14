@@ -10,10 +10,9 @@ import org.keycloak.authentication.Authenticator;
 import org.keycloak.models.AuthenticatorConfigModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
-import org.keycloak.models.UserCredentialManager;
+import org.keycloak.models.SubjectCredentialManager;
 import org.keycloak.models.UserLoginFailureModel;
 import org.keycloak.models.UserModel;
-import org.keycloak.models.UserSessionProvider;
 import org.keycloak.models.credential.OTPCredentialModel;
 
 /**
@@ -77,10 +76,9 @@ public class MySimpleRiskBasedAuthenticator implements Authenticator {
     }
 
     private void forceSecondFactor(KeycloakSession session, UserModel user) {
-        UserCredentialManager credentialManager = session.userCredentialManager();
-        RealmModel realm = session.getContext().getRealm();
+        SubjectCredentialManager credentialManager = user.credentialManager();
 
-        if (!credentialManager.isConfiguredFor(realm, user, OTPCredentialModel.TYPE)) {
+        if (!credentialManager.isConfiguredFor(OTPCredentialModel.TYPE)) {
             // if not OTP set, than force registration
             user.addRequiredAction(UserModel.RequiredAction.CONFIGURE_TOTP);
         }
