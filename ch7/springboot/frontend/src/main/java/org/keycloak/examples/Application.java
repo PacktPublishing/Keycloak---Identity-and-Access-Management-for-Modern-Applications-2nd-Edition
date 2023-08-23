@@ -1,4 +1,4 @@
-package com.example.springboot;
+package org.keycloak.examples;
 
 import java.util.Arrays;
 
