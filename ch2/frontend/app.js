@@ -5,6 +5,11 @@ var stringReplace = require('string-replace-middleware');
 var KC_URL = process.env.KC_URL || "http://localhost:8080";
 var SERVICE_URL = process.env.SERVICE_URL || "http://localhost:3000/secured";
 
+console.log('Environment Variables:');
+for (const key in process.env) {
+  console.log(`${key}: ${process.env[key]}`);
+}
+
 app.use(stringReplace({
    'SERVICE_URL': SERVICE_URL,
    'KC_URL': KC_URL
