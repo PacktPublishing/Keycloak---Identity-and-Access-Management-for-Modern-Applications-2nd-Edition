@@ -83,6 +83,7 @@ The process entails configuring the application-client relationship within Keycl
 -	**Foundation for Advanced Learning**: The knowledge gained from this chapter lays a solid foundation for further exploration of advanced Keycloak topics, enabling readers to dive deeper into securing applications and understanding more intricate mechanisms.
 -	**Real-World Application**: The practical example of a sample application helps readers grasp how the discussed concepts translate into real-world scenarios, enhancing their understanding of how Keycloak can be integrated into modern applications for enhanced security.
 
+- https://packt.link/oxOr8
 
 ### Chapter 03, Brief Introduction to Standards 
 This chapter introduces key concepts in integrating applications securely using standards like OAuth 2.0, OpenID Connect, JSON Web Tokens (JWT), and SAML 2.0. OAuth 2.0 allows apps to access resources without sharing credentials. It's vital for third-party access, enterprise security, and offers various flows based on use cases. OpenID Connect builds on OAuth 2.0, focusing on authentication. It allows centralized user management, enabling social logins and single sign-on (SSO), improving security and user experience. JWT, a JSON-based token format, is used for access tokens due to its interoperability, performance, and direct-read capabilities. It's part of the broader JOSE specifications. However, caution is needed to avoid vulnerabilities. SAML 2.0 is a mature protocol for authentication and SSO, widely used in enterprises. While OpenID Connect is recommended for modern architectures, SAML remains relevant for specific use cases and compliance requirements. Keycloak supports both standards, offering flexibility in creating a unified authentication experience. Understanding these standards empowers developers to enhance app security, user experience, and access control.
@@ -108,6 +109,7 @@ In essence, the chapter's insights are centered around OIDC's pivotal role in mo
 -	**User Logout Strategies**: Various approaches to handling user logout are examined. With coverage of session invalidation, OIDC Back-Channel Logout, Front-Channel Logout, and the effectiveness of relying on short token and session expiration times.
 -	**Practical Application**: The chapter concludes by providing practical insights into how OIDC can secure applications, offering a step-by-step guide to the authentication flow and user information retrieval.
 
+- https://packt.link/xZ3iN
 
 ### Chapter 05, Authorizing Access with OAuth 2.0
 This chapter delves into Keycloak's integration with OAuth 2.0 for authorizing access to REST APIs and services. It employs a custom OAuth 2.0 Playground application to illustrate practical interactions and concepts. The chapter highlights the Authorization Code grant type, showcasing how applications retrieve access tokens from Keycloak. It emphasizes user consent and introduces scopes, enabling incremental authorization based on specific application functionalities.
@@ -121,6 +123,7 @@ Furthermore, the text outlines methods to limit access, emphasizing roles and cl
 -	**Token Validation**: The chapter explains two methods for validating access tokens: token introspection and direct token verification. It's highlighted that token introspection is simpler but adds latency.
 -	**Insights and Cautions**: The text underscores the importance of defining scopes carefully, providing examples from platforms like Google and GitHub. It emphasizes the need for a good understanding of JWT when verifying tokens directly.
 
+- https://packt.link/fgdzB
  
 ### Chapter 06, Securing Different Application Types
 This chapter focuses on securing applications using Keycloak. It starts by distinguishing between internal and external applications, highlighting the consent requirement for the latter. The text then explores securing various types of web applications, emphasizing the use of authorization code flow with PKCE extension as a best practice. Server-side web apps, SPAs with dedicated or intermediary APIs, and SPAs with external APIs are covered.
@@ -148,6 +151,11 @@ The integration mechanisms explored range from configuring Quarkus and Spring Bo
 -	**Node.js Integration**: Node.js applications can integrate with Keycloak using the keycloak-connect library. This adapter simplifies authentication and resource protection by providing middleware for easy integration with Keycloak. Both frontend and backend applications can be protected using the adapter, which automatically handles token validation.
 -	**Reverse Proxy**: Using reverse proxy, such as Apache HTTP Server, in front of applications allows for seamless integration with Keycloak. This method enhances security and simplifies authentication. The proxy forwards requests to the application and handles authentication using the mod_auth_openidc module.
 -	**Importance of Standard Libraries**: Instead of implementing custom integration, it's recommended to use well-established libraries and frameworks for OAuth2 and OpenID Connect. Relying on widely-used implementations ensures compliance, security, and interoperability with standards.
+
+**Notes**
+- https://packt.link/rEPXu
+- https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps
+- https://openid.net/developers/certified
 
 
 ### Chapter 08, Authorization Strategies

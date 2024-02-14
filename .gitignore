@@ -1,6 +1,7 @@
 .idea
 *.iml
 gradle
+*.db
 
 package-lock.json
 node_modules

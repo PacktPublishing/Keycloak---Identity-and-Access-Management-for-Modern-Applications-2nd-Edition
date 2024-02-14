@@ -1,15 +1,14 @@
 version: '3'
 
 services:
-  auth:
+  keycloak:
     image: quay.io/keycloak/keycloak
     ports: 
-      - "8080:8080"
+      - "8180:8080"
     environment:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
     command:
       - start-dev 
-      - --import-realm
     volumes:
-      - ./realm.json:/opt/keycloak/data/import/realm.json
+      - ./data:/opt/keycloak/data/h2
